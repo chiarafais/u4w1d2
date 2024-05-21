@@ -7,7 +7,7 @@ public class Main {
 
         System.out.println(pariDispari("due"));
 
-        System.out.println(annoBisestile(2000));
+        System.out.println(annoBisestile(2024));
         System.out.println(annoBisestile(1700));
 
     }
@@ -24,7 +24,7 @@ public class Main {
     }
     public static Boolean annoBisestile(int num){
         boolean calcolo;
-      if(num % 4 == 0 && num % 100 == 0 && num % 400 == 0){
+      if(num % 4 == 0 && num % 100 != 0 || num % 400 == 0){
     return calcolo = true;
     }else{
           return calcolo= false;
